@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useSocket } from '../../context/socketContext';
+import { useSocket } from '../../context/SocketContext';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext'
 import { useModal } from '../../context/ModalContext'
