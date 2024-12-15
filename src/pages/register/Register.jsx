@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '../../context/authContext'
+import { useAuth } from '../../context/AuthContext'
 import Loader from '../../components/loader/Loader'
 import { useModal } from '../../context/ModalContext'
 import { useState, useEffect} from 'react'
