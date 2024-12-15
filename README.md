@@ -1,8 +1,16 @@
-# React + Vite
+Connect 4 Online - Frontend
+This is a personal project that brings the classic Connect 4 game to an online experience, allowing two players to connect and play in real time. The platform includes:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+User Authentication (login and registration) with token management.
+Real-time Connection using Socket.IO to create and join game rooms.
+Dynamic Game Updates with events emitted from the server.
+Fully Responsive Design, functional on both mobile devices and larger screens.
 
-Currently, two official plugins are available:
+Related Repository
+Backend Repository - The backend implementation for Connect 4 Online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+React
+Vite
+Socket.IO
+SCSS Modules
