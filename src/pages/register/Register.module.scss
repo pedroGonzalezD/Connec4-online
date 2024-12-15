@@ -1,0 +1,90 @@
+@use '../../styles/var' as *;
+@use "sass:color";
+
+.container{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.cont{
+  max-width: 400px;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+
+  h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.message, .logIn{
+  color: $gray;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logIn{
+  margin-bottom: 0;
+
+  a{
+    text-decoration: none;
+    color: $primary;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.form{
+  label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  input{
+    margin-top: 0.5rem;
+    outline: 1px solid $primary;
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+
+  button{
+    width: 100%;
+    background-color: $primary;
+    color: white;
+    margin-bottom: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 100ms, transform 100ms;
+
+    &:hover{
+      background-color: color.adjust($primary, $lightness: -10%);
+    }
+
+    &:active{
+      transform: scale(0.9);
+    }
+  }
+}
+
+.error{
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}

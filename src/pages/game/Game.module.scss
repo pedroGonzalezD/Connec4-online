@@ -1,0 +1,160 @@
+@use '../../styles/var' as *;
+@use "sass:color";
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr); 
+  gap: 5px; 
+  background-color: hsl(246, 54%, 53%);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  min-width:300px ;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.cell {
+  width: 100%; 
+  aspect-ratio: 1; 
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: hsl(43, 100%, 51%);
+  }
+}
+
+.cell[data-player='1'] {
+  background-color: hsl(32, 100%, 49%);
+}
+
+.cell[data-player='2'] {
+  background-color: hsl(192, 70%, 43%);
+}
+
+.surrenderButton {
+  background-color: hsl(358, 100%, 68%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: hsl(355, 78%, 56%);
+  }
+
+  &:disabled {
+    background-color: hsl(0, 0%, 80%);
+    cursor: not-allowed;
+  }
+}
+
+.gameTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4e44ce; 
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gameTurn {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6a5acd; 
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cont{
+  background-color: hsla(0, 0%, 100%, 0.9);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+.button{
+  width: 100%;
+  color: white;
+  background-color: $primary;
+  padding: 0.5rem;
+  border-radius:8px;
+  cursor: pointer;
+  transition: color 50ms, transform 50ms;
+  
+  &:hover{
+    background-color: color.adjust($primary, $lightness: -10%);
+  }
+  
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+.cancel{
+  width: 100%;
+  color: hsl(0, 63%, 28%);
+  border: 1px solid hsl(0, 63%, 28%);
+  background-color: rgba(255, 172, 172, 0.5);
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: rgb(168, 14, 14);
+    color: white;
+  }
+}
+
+.modalButtons{
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.p{
+  color: $gray;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.win{
+  color:hsl(160, 84%, 39%);
+}
+
+.lost{
+  color:hsl(355, 78%, 56%)
+}
+
+.draw{
+  color: hsl(38, 92%, 50%);
+}
