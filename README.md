@@ -1,16 +1,18 @@
-Connect 4 Online - Frontend
-This is a personal project that brings the classic Connect 4 game to an online experience, allowing two players to connect and play in real time. The platform includes:
+# Connect 4 Online - Frontend
 
-User Authentication (login and registration) with token management.
-Real-time Connection using Socket.IO to create and join game rooms.
-Dynamic Game Updates with events emitted from the server.
-Fully Responsive Design, functional on both mobile devices and larger screens.
+Connect 4 Online is a project that brings the classic Connect 4 game to an online platform. This repository contains the **frontend implementation**, which allows users to:
 
-Related Repository
-Backend Repository - The backend implementation for Connect 4 Online.
+- Register and log in  
+- Create and join game rooms  
+- Play Connect 4 in real time with other players  
 
-Technologies Used
-React
-Vite
-Socket.IO
-SCSS Modules
+## Related Repositories
+
+- [Backend Repository](https://github.com/pedroGonzalezD/Connect4B) - The backend implementation for Connect 4 Online.
+
+## Technologies Used
+
+- React  
+- Vite  
+- Socket.IO  
+- SCSS Modules  
