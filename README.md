@@ -8,7 +8,7 @@ Connect 4 Online is a project that brings the classic Connect 4 game to an onlin
 
 ## Related Repositories
 
-- [Backend Repository](https://github.com/pedroGonzalezD/Connect4B) - The backend implementation for Connect 4 Online.
+- [Backend Repository](https://github.com/pedroGonzalezD/connect4-online-backend) - The backend implementation for Connect 4 Online.
 
 ## Technologies Used
 
