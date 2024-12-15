@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useSocket } from '../../context/socketContext';
+import { useSocket } from '../../context/SocketContext';
 import styles from './Game.module.scss';
 import Loader from '../../components/loader/Loader';
 import ModalC from '../../components/modal/ModalC';
